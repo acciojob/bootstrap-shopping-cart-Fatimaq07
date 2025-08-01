@@ -1,16 +1,129 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #eee;
+    }
+    .block-heading {
+      text-align: center;
+      color: #3b99e0;
+      margin-top: 30px;
+    }
+    .block-heading p {
+      color: #777;
+      font-size: 16px;
+    }
+    .summary {
+      background-color: #f7fbff;
+      border-top: 2px solid #5ea4f3;
+      padding: 20px;
+    }
+    .summary h5 {
+      font-weight: bold;
+    }
+    .product {
+      padding: 15px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .product .price {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .product img {
+      width: 80px;
+    }
+    .checkout-btn {
+      background-color: #3b99e0;
+      color: white;
+      width: 100%;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="container">
+    <div class="block-heading">
+      <h2>Shopping cart</h2>
+      <p>The customer is very important, the customer will be followed by the customer. Now, as an urn, I have no right to be in possession of property.</p>
+    </div>
 
+    <div class="row">
+      <!-- Product List -->
+      <div class="col-lg-8">
+        <div class="product row align-items-center">
+          <div class="col-2">
+            <img class="img-fluid" src="https://via.placeholder.com/80" alt="">
+          </div>
+          <div class="col-6">
+            <h6 class="text-primary">I am very sorry</h6>
+            <p class="mb-0">Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+          </div>
+          <div class="col-2">
+            <label>Quantity:</label>
+            <input type="number" class="form-control" value="0">
+          </div>
+          <div class="col-2 text-end price">$120</div>
+        </div>
+
+        <div class="product row align-items-center">
+          <div class="col-2">
+            <img class="img-fluid" src="https://via.placeholder.com/80" alt="">
+          </div>
+          <div class="col-6">
+            <h6 class="text-primary">I am very sorry</h6>
+            <p class="mb-0">Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+          </div>
+          <div class="col-2">
+            <label>Quantity:</label>
+            <input type="number" class="form-control" value="1">
+          </div>
+          <div class="col-2 text-end price">$120</div>
+        </div>
+
+        <div class="product row align-items-center">
+          <div class="col-2">
+            <img class="img-fluid" src="https://via.placeholder.com/80" alt="">
+          </div>
+          <div class="col-6">
+            <h6 class="text-primary">I am very sorry</h6>
+            <p class="mb-0">Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+          </div>
+          <div class="col-2">
+            <label>Quantity:</label>
+            <input type="number" class="form-control" value="1">
+          </div>
+          <div class="col-2 text-end price">$120</div>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="col-lg-4">
+        <div class="summary">
+          <h5>Summary</h5>
+          <div class="d-flex justify-content-between py-2 border-bottom">
+            <span>Subtotal</span>
+            <span>$360</span>
+          </div>
+          <div class="d-flex justify-content-between py-2 border-bottom">
+            <span>Discount</span>
+            <span>$0</span>
+          </div>
+          <div class="d-flex justify-content-between py-2 border-bottom">
+            <span>Shipping</span>
+            <span>$0</span>
+          </div>
+          <div class="d-flex justify-content-between py-2">
+            <strong>Total</strong>
+            <strong>$360</strong>
+          </div>
+          <button class="btn checkout-btn mt-3">checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
